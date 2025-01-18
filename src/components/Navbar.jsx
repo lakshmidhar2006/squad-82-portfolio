@@ -1,15 +1,28 @@
 import React from 'react';
 import { Link } from 'react-router-dom'; 
-import './Navbar.css';
+import { useNavigate } from 'react-router-dom';
+import '../css/Navbar.css';
 
 const Navbar = () => {
+  const navigate = useNavigate();
+  const navigator = (redirect)=>{
+    navigate(redirect);
+  }
   return (
     <nav>
       <ul>
-        <li><Link to="/">Home</Link></li>
-        <li><Link to="/about">About</Link></li>
-        <li><Link to="/projects">Projects</Link></li>
-        <li><Link to="/activities">Activities</Link></li>
+        <li onClick={()=>{
+          navigate("/")
+        }}>Home</li>
+        <li onClick={()=>{
+          navigate("/about")
+        }}>About</li>
+        <li onClick={()=>{
+          navigate("/projects")
+        }}>Projects</li>
+        <li onClick={()=>{
+          navigate("/activities")
+        }}>Activities</li>
       </ul>
     </nav>
   );
