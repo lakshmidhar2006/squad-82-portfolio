@@ -1,4 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Jersey+10&family=Style+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jersey+10&family=Style+Script&display=swap');
+nav{
+    font-size: larger;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: auto;
+    background-color: hsla(0, 0%, 12%, 0.7);
+}
+.logo{
+
+    font-weight: 400;
+
+    font-family: "Jersey 10", serif;
+    font-size: 500%;
+    background: -webkit-linear-gradient(hsla(0, 0%, 100%, 1),hsla(252, 77%, 64%, 1));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 li{
-    padding-left: 3%;
-    display: inline;
+    
+    padding-left:50px ;
+    list-style: none;
+    display: inline-flex;
+    display: inline-block;
+    font-weight: 700;
+    font-size: x-large;
+    font-family: "Inter", serif;
+
 }
