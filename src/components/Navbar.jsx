@@ -10,7 +10,9 @@ const Navbar = () => {
   }
   return (
     <nav>
-      <ul>
+      
+      <div className="logo"> <img src="./assets/Logo.png" alt="" />82</div>
+      <ul >
         <li onClick={()=>{
           navigate("/")
         }}>Home</li>
