@@ -23,6 +23,7 @@ const Navbar = () => {
         <li onClick={()=>{
           navigate("/activities")
         }}>Activities</li>
+
       </ul>
     </nav>
   );
