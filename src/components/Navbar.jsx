@@ -11,25 +11,32 @@ const Navbar = () => {
   return (
     <nav>
       
-      <div className="logo"> <img src="./assets/Logo.png" alt="" />82</div>
-      <ul >
-        <li onClick={()=>{
-          navigate("/")
-        }}>Home</li>
-        <li onClick={()=>{
-          navigate("/about")
-        }}>About</li>
-        <li onClick={()=>{
-          navigate("/squad")
-        }}>Squad</li>
-        <li onClick={()=>{
-          navigate("/projects")
-        }}>Projects</li>
-        <li onClick={()=>{
-          navigate("/activities")
-        }}>Activities</li>
+      <div className="logo"> <img className='logo-img' src="/src/assets/Logo.png" alt="" />82</div>
+      <div className='navbar' >
 
-      </ul>
+        <button onClick={()=>{
+          navigate("/")
+        }}>Home
+        </button>
+        <button onClick={()=>{
+          navigate("/about")
+        }}>About</button>
+        <button onClick={()=>{
+          navigate("/squad")
+        }}>Squad</button>
+        <button onClick={()=>{
+          navigate("/projects")
+        }}>Projects</button>
+        <button onClick={()=>{
+          navigate("/activities")
+        }}>Activities</button>
+          </div>
+        <div className='toggle'>
+        <div className='line'></div>
+        <div className='line'></div>
+        <div className='line'></div>
+        </div>
+    
     </nav>
   );
 };
