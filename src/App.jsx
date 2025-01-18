@@ -17,7 +17,7 @@ function App() {
         <Route path="/about" element={<Aboutus />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/activities" element={<Activities />} />
-        <Route path="/squad" element={<Squad />} />
+        <Route path="/Squad" element={<Squad />} />
         <Route path="*" element={<h1>404 - Page Not Found</h1>} />
       </Routes>
     </>

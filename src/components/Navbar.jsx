@@ -20,6 +20,9 @@ const Navbar = () => {
           navigate("/about")
         }}>About</li>
         <li onClick={()=>{
+          navigate("/squad")
+        }}>Squad</li>
+        <li onClick={()=>{
           navigate("/projects")
         }}>Projects</li>
         <li onClick={()=>{
