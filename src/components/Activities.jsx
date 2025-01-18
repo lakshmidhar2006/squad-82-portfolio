@@ -1,5 +1,5 @@
 import React from "react";
-import './Activities.css';
+import '../css/Activities.css';
 function Activities(){
     return(
 <>
