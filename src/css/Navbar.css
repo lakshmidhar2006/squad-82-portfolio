@@ -5,7 +5,7 @@ nav{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 5.5rem;
+    height: auto;
     background-color: hsla(0, 0%, 12%, 0.7);
 }
 
@@ -47,19 +47,21 @@ button:hover{
     background-color: rgba(196, 196, 196, 0.686);
 }
 
-.toggle .line{
-    height: 5px;
-    width: 25px;
-    margin-bottom: 3px;
-    border-radius: 10px;
-    background-color: black;
-
-}
 .toggle{
-
+    transform: rotate(90deg);
+    display: none;
 }
 
-@media (max-width:720px){
-
-    
+@media (max-width:740px){
+    nav{
+        flex-direction: column;
+    }
+    .toggle{
+        display: block;
+    }
+    .navbar{
+        flex-direction: column;
+        display: none;
+    }
+        
 }

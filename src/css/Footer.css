@@ -1,0 +1,10 @@
+hr{
+    width: 80%;
+    height: 1px;
+    background-color: black;
+    border: 0;
+}
+
+footer{
+    padding-left:11%;
+}
