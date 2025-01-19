@@ -1,67 +1,75 @@
-@import url('https://fonts.googleapis.com/css2?family=Jersey+10&family=Style+Script&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jersey+10&family=Style+Script&display=swap');
-nav{
-    font-size: larger;
+
+.navbar-container {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    height: auto;
-    background-color: hsla(0, 0%, 12%, 0.7);
-}
-
-.logo{
-
-    font-weight: 400;
-    font-family: "Jersey 10", serif;
-    font-size: 500%;
-    background: -webkit-linear-gradient(hsla(0, 0%, 100%, 1),hsla(252, 77%, 64%, 1));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-.logo-img{
-    display: inline;
-    height:70px;
-    padding-right: 10px;
-    width: 55px;
-    position: relative;
-    top: 10px;
-}
-.navbar{
-    margin: 0;
-    padding: 0;
+    padding: 10px 20px;
+    background-color: #1a1a2e;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .logo {
     display: flex;
-}
-button{
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .logo-img {
+    height: 40px;
+  }
+  
+  .navbar-links {
+    display: flex;
+    gap: 20px;
+    
+  }
+    
+  .navbar-links button {
+    padding: 10px;
+    color: aliceblue;
     border: none;
     background: none;
-    padding: 1rem;
-    text-decoration: none;
-    display: block;
-    font-weight: 700;
-    font-size: x-large;
-
-    font-family: "Inter", serif;
-    
-}
-button:hover{
-    background-color: rgba(196, 196, 196, 0.686);
-}
-
-.toggle{
-    transform: rotate(90deg);
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .navbar-links button:hover {
+    background-color: #f0f0f0;
+    color: black;
+    border-radius: 5px;
+  }
+  
+  .hamburger {
     display: none;
-}
+    font-size: 24px;
+    cursor: pointer;
+    border: none;
+    background: none;
+    color: aliceblue;
+  }
+  
 
-@media (max-width:740px){
-    nav{
-        flex-direction: column;
+  @media (max-width: 768px) {
+    .hamburger {
+      display: block; 
     }
-    .toggle{
-        display: block;
+  
+    .navbar-links {
+      display: none; 
+      flex-direction: column;
+      gap: 15px;
+      background-color:#1a1a2e;
+      position: absolute;
+      top: 60px;
+      right: 0;
+      width: 100%;
+      padding: 20px;
+      box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+      z-index: 1000;
     }
-    .navbar{
-        flex-direction: column;
-        display: none;
+  
+    .navbar-links.active {
+      display: flex; 
     }
-        
-}
+  }
+  

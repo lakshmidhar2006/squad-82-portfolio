@@ -1,10 +1,30 @@
-hr{
-    width: 80%;
-    height: 1px;
-    background-color: black;
-    border: 0;
-}
-
-footer{
-    padding-left:11%;
-}
+.footer {
+    background-color: #1a1a2e;
+    color: #ffffff;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .footer-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px; 
+  }
+  
+  .logo-img {
+    height: 50px;
+    width: auto;
+  }
+  
+  .footer-logo-text {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #f39c12;
+  }
+  
+  .footer p {
+    font-size: 0.9rem;
+    color: #aaaaaa;
+  }
+  
