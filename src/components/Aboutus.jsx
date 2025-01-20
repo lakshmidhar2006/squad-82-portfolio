@@ -1,5 +1,6 @@
 import React from "react";
 import "../css/AboutUs.css";
+
 import grouppic from "../assets/group picture.jpg";
 import grouppic2 from "../assets/picture 2.jpg";
 import grouppic3 from "../assets/picture 3.jpg";
