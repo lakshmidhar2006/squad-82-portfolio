@@ -12,6 +12,7 @@ const Navbar = () => {
 
   return (
     <nav className="navbar-container">
+
       <div className="logo">
         <img className="logo-img" src="/src/assets/Logo.png" alt="Logo" />
         <span className="logo-text">82</span>
@@ -28,6 +29,7 @@ const Navbar = () => {
         <button onClick={() => navigate("/projects")}>Projects</button>
         <button onClick={() => navigate("/activities")}>Activities</button>
         <button onClick={() => navigate("/about")}>About Us</button>
+        <button onClick={() => navigate("/squad")}>Squad</button>
       </div>
     </nav>
   );
