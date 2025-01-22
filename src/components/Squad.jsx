@@ -8,16 +8,16 @@ function Squad() {
     {
       name: "Squadmate",
       image: hi,
-      github: "https://github.com/johndoe",
-      instagram: "https://instagram.com/johndoe",
-      linkedin: "https://linkedin.com/in/johndoe",
+      github: "",
+      instagram: "",
+      linkedin: "",
     },
     {
       name: "Squad Mate",
       image: hi,
-      github: "https://github.com/janesmith",
-      instagram: "https://instagram.com/janesmith",
-      linkedin: "https://linkedin.com/in/janesmith",
+      github: "",
+      instagram: "",
+      linkedin: "",
     },
   ];
 
